@@ -38,7 +38,7 @@ class GambarModel extends CI_Model
             'nama_file' => $upload['file']['file_name'],
             'ukuran_file' => $upload['file']['file_size'],
             'tipe_file' => $upload['file']['file_type']
-        );
+        ); //proses pembentukan array lalu penyimpanan data
 
         $this->db->insert('gambar', $data);
     }

@@ -14,10 +14,10 @@
         foreach ($gambar as $data) { // Lakukan looping pada variabel gambar dari controller
             echo "<tr>";
             echo "<td><img src='" . base_url("images/" . $data->nama_file) . "' width='100' height='100'></td>";
-            echo "<td>" . $data->deskripsi . "</td>";
-            echo "<td>" . $data->nama_file . "</td>";
-            echo "<td>" . $data->ukuran_file . " kB</td>";
-            echo "<td>" . $data->tipe_file . "</td>";
+            echo "<td>" . $data->deskripsi . "</td>"; //menampilkan data deskripsi
+            echo "<td>" . $data->nama_file . "</td>"; //menampilkan data nama file
+            echo "<td>" . $data->ukuran_file . " kB</td>"; //menampilkan ukuran file
+            echo "<td>" . $data->tipe_file . "</td>"; //menampilkan data tipe file
             echo "</tr>";
         }
     } else { // Jika data tidak ada
