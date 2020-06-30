@@ -6,7 +6,6 @@ class Gambar extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-
         $this->load->model('GambarModel');
     }
 
@@ -35,5 +34,8 @@ class Gambar extends CI_Controller
         }
 
         $this->load->view('form', $data);
+    }
+    public function coba(){
+        
     }
 }
